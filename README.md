@@ -14,7 +14,9 @@ Before you begin, make sure you have an laboratory environment set up according 
 4. Create an directory in the lib-folder called "movies" (`mkdir lib/movies`)
 5. Create an file called movieParser.js  in the lib directory (`touch lib/movieParser.js`)
 6. Export a function from the movieParser.js and require it in app.js. Add `console.log("Hello World");` to the function in movieParser. Call the function from app.js and run the application using `node app.js`. If the console greets you with "Hello World" you are good to go. Otherwise, debug!
-7. Copy the [json-file](movies.json) and the [xml-file](movies.xml) into the folder `./lib/movies`
+7. Copy the [json-file](movies.json) and the [xml-file](movies.xml) into the folder `./lib/movies`:
+  * `wget -O ./lib/movies/movies.xml 'https://raw.githubusercontent.com/CS-LNU-Learning-Objects/the-node-platform-exercise-rotten-tomatoes/master/movies.xml'`
+  * `wget -O ./lib/movies/movies.json 'https://raw.githubusercontent.com/CS-LNU-Learning-Objects/the-node-platform-exercise-rotten-tomatoes/master/movies.json'`
 8. Find an npm-package that can convert xml to javascript objects. ([xml2js](https://www.npmjs.com/package/xml2js))
 9. Add the package to your project. (`npm install xml2js --save`)
 
