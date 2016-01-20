@@ -21,6 +21,7 @@ Before you begin, make sure you have an laboratory environment set up according 
 Now you are good to go.
 
 In this exercise the main goal is to train your skills in handling callbacks and promises. The recommended path to follow is, therefore:
+
 1. Solve the exercise using the fs-module (`var fs = require("fs");`) to read the content of the files and the module xml2js to convert the XML-content to js.
 2. Wrap the fs-callback-interface behind a promise-module. I.e. create a module called `fs-promise.js` with functions returning promises. Make use of `Promise.all()` to be able to read the xml- and json-files in parallel.
 3. Search the [npm library](https://www.npmjs.com/search?q=fs+promise) and discover that some one else already made a [promise wrapper](https://www.npmjs.com/package/fs-promise). Remove your fs-promise.js and use `fs-promise`instead. (`npm install fs-promise --save`)
