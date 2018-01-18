@@ -44,3 +44,7 @@ Rotten Tomatoes: 94.8 %
 ### Bonus exercise
 
 Using the built in time measurement tool `console.time('What I am measuring')` and corresponding `console.timeEnd('What I am measuring')` you can measure the execution time of parts of your code. Use that to analyze which parts of your code are the bottlenecks. How could that be avoided?
+
+## Solution
+
+https://github.com/CS-LNU-Learning-Objects/SOLUTION-the-node-platform-exercise-rotten-tomatoes
