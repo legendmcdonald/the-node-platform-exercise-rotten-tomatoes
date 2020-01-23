@@ -11,17 +11,30 @@ Let's get started!
 Before you begin, make sure you have a laboratory environment set up according to your course specification.
 
 1. Start by creating a `package.json` identifying your project. (`$ npm init`).
+1. Follow the instruction at <https://www.npmjs.com/package/@lnu/eslint-config> to config the linting tool for the code and JSDoc comments.
+
+1. Add `start`, `lint` and `lint:fix` scripts to the `package.json` file.
+
+    ```json
+    "scripts": {
+        "start": "node app.js",
+        "lint": "npx eslint . || exit 0",
+        "lint:fix": "npx eslint . --fix || exit 0"
+    }
+    ```
+
+1. Save the `package.json` file and run `npm install`.
 1. Create a `.ignore` file for your environment (`git ignore node,visualstudiocode,windows >> .gitignore`, if you created the ignore alias, if necessary replace `visualstudiocode` with your IDE and/or `windows` with `macos` or `linux`).
-1. Create an `app.js` file in the root directory. (`$ touch app.js`)
+1. Create an `app.js` file in the root directory. (`touch app.js`)
 1. Create a directory called `lib`. (`mkdir lib`)
 1. Create a directory in the `lib` directory called `movies` (`mkdir lib/movies`)
-1. Create a file called `reviewer.js`  in the `lib` directory (`$ touch lib/reviewer.js`)
-1. Export a function from `reviewer.js` and require it in `app.js`. Add `console.log('Hello World)` to the function in `reviewer.js`. Call the function from `app.js` and run the application using `$ node app.js`. If the console greets you with "Hello World" you are good to go. Otherwise, debug!
+1. Create a file called `reviewer.js`  in the `lib` directory (`touch lib/reviewer.js`)
+1. Export a function from `reviewer.js` and require it in `app.js`. Add `console.log('Hello, World!')` to the function in `reviewer.js`. Call the function from `app.js` and run the application using `npm start`. If the console greets you with "Hello, World!" you are good to go. Otherwise, debug!
 1. Copy the [JSON file](movies.json) and the [XML file](movies.xml) into the folder `./lib/movies`:
     - `wget -O ./lib/movies/movies.xml 'https://raw.githubusercontent.com/CS-LNU-Learning-Objects/the-node-platform-exercise-rotten-tomatoes/master/movies.xml'`
     - `wget -O ./lib/movies/movies.json 'https://raw.githubusercontent.com/CS-LNU-Learning-Objects/the-node-platform-exercise-rotten-tomatoes/master/movies.json'`
-1. Find a package at npm that can convert XML to JavaScript objects. ([xml2js](https://www.npmjs.com/package/xml2js))
-1. Add the package to your project. (`$ npm install xml2js`)
+1. Find a package at npm that can convert xml to JavaScript objects. ([xml2js](https://www.npmjs.com/package/xml2js))
+1. Add the package to your project. (`npm install xml2js`)
 
 Now you are good to go.
 
@@ -35,7 +48,7 @@ In this exercise, the main goal is to train your skills in handling callbacks an
 ### Example use and output
 
 ```shell
-$ node app.js
+$ npm start
 Average rating
 IMDB: 9.08
 Rotten Tomatoes: 94.8 %
@@ -47,4 +60,4 @@ Using the built-in time measurement tool `console.time('What I am measuring')` a
 
 ## Solution
 
-https://github.com/CS-LNU-Learning-Objects/SOLUTION-the-node-platform-exercise-rotten-tomatoes
+<https://github.com/CS-LNU-Learning-Objects/SOLUTION-the-node-platform-exercise-rotten-tomatoes>
