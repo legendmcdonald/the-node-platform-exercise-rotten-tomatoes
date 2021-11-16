@@ -30,7 +30,7 @@ Before you begin, make sure you have a laboratory environment set up according t
 1. Create a directory in the `lib` directory called `movies` (`mkdir lib/movies`)
 1. Create a file called `reviewer.js`  in the `lib` directory (`touch lib/reviewer.js`)
 1. Export a function from `reviewer.js` and require it in `app.js`. Add `console.log('Hello, World!')` to the function in `reviewer.js`. Call the function from `app.js` and run the application using `npm start`. If the console greets you with "Hello, World!" you are good to go. Otherwise, debug!
-1. Copy the [JSON file](movies.json) and the [XML file](movies.xml) into the folder `./lib/movies`:
+1. Copy the [JSON file](lib/movies/movies.json) and the [XML file](lib/movies/movies.xml) into the folder `./lib/movies`:
     - `wget -O ./lib/movies/movies.xml 'https://raw.githubusercontent.com/CS-LNU-Learning-Objects/the-node-platform-exercise-rotten-tomatoes/master/movies.xml'`
     - `wget -O ./lib/movies/movies.json 'https://raw.githubusercontent.com/CS-LNU-Learning-Objects/the-node-platform-exercise-rotten-tomatoes/master/movies.json'`
 1. Find a package at npm that can convert xml to JavaScript objects. ([xml2js](https://www.npmjs.com/package/xml2js))

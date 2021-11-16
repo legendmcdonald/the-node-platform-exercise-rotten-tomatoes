@@ -1,0 +1,37 @@
+{
+  "name": "the-node-platform-exercise-rotten-tomatoes",
+  "version": "1.0.0",
+  "description": "Rotten Tomatoes",
+  "main": "app.js",
+  "scripts": {
+      "start": "node app.js",
+      "lint": "npx eslint . || exit 0",
+      "lint:fix": "npx eslint . --fix || exit 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/legendmcdonald/the-node-platform-exercise-rotten-tomatoes.git"
+  },
+  "author": "da222pa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/legendmcdonald/the-node-platform-exercise-rotten-tomatoes/issues"
+  },
+  "homepage": "https://github.com/legendmcdonald/the-node-platform-exercise-rotten-tomatoes#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@lnu/eslint-config": "^1.1.4",
+    "eslint": "^8.2.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsdoc": "^37.0.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1"
+  },
+  "eslintConfig": {
+    "extends": "@lnu"
+  }
+}
